@@ -1,20 +1,3 @@
-# Welcome to Filapanel
-
-*Brought to you by [Ploi - a server management tool](https://ploi.io/?ref=filapanel-github)*
-
-[https://filapanel.com](https://filapanel.com?ref=filapanel-github)
-
-<p align="center"><a href="https://filapanel.com/?ref=filapanel-github" target="_blank"><img src="https://filapanel.com/img/og.png" width="100%" alt="Filapanel"></a></p>
-
-Generated on: 2023-09-07 15:11:35 (UTC)
-
-Filapanel is your dynamic, user-friendly tool for accelerating Laravel application development. Built on the Filament framework, it provides a seamless approach for creating, configuring, and managing resources and models.
-
-## Installed packages
-
-- [Filament Spatie-Laravel-Media-Library-Plugin](https://github.com/filament/spatie-laravel-media-library-plugin)
-- [Laravel Cashier](https://github.com/laravel/cashier)
-
 ## Further installation
 
 Now that you've got your project, it's time to finish up installation. Please make sure to run the following commands
@@ -58,13 +41,9 @@ php artisan migrate:fresh
 php artisan storage:link
 ```
 
-### All as one command
+
+### create a user 
 
 ```
-composer install && 
-cp .env.example .env &&
-php artisan key:generate && 
-php artisan filament:upgrade &&
-php artisan migrate:fresh &&
-php artisan storage:link
+php artisan make:filament-user
 ```
